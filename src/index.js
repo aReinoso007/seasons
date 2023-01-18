@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from 'react-dom/client';
+import SeasonDisplay from './SeasonDisplay';
 
 class App extends React.Component {
 
@@ -15,10 +16,10 @@ class App extends React.Component {
     //React needs to have render defined
     render() {
         if (this.state.errorMessage && !this.state.lat) {
-            return <div> Error : {this.state.errorMessage}</div>
+            return <SeasonDisplay errMsg={this.state.errorMessage} />
         }
         if (!this.state.errorMessage && this.state.lat) {
-            return <div> Latitude: {this.state.lat}</div>
+            return <SeasonDisplay lat={this.state.lat} />
         }
         return <div>Loading!</div>
     }

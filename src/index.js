@@ -11,6 +11,12 @@ class App extends React.Component {
         // the only time we do direct assignment to the state
         // we always use setState
         this.state = { lat: null, errorMessage: '' };
+
+
+
+    }
+
+    componentDidMount() {
         window.navigator.geolocation.getCurrentPosition(
             position => {
                 //we call setState to change the state
@@ -20,11 +26,7 @@ class App extends React.Component {
                 this.setState({ errorMessage: err.message });
             }
         );
-
-
     }
-
-
 
     //React needs to have render defined
     render() {

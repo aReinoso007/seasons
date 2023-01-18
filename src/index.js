@@ -24,6 +24,8 @@ class App extends React.Component {
 
     }
 
+
+
     //React needs to have render defined
     render() {
         if (this.state.errorMessage && !this.state.lat) {

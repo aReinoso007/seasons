@@ -1,4 +1,4 @@
-## Component lifeCycle
+## Component lifeCycle 
 
 * Constructor: 
     for state init, init data loading (calling APIs)
@@ -15,7 +15,7 @@
 * componentWillUnmount():
     Whenever we want to remove a component and we want to do some cleanup, when we use some 3rd parties libraries tho its not used as often.
 
-### Other lifecycle methods
+### Other lifecycle methods 🚀
 - shouldComponentUpdate()
 - getDerivedStateFromProps()
 - getSnapshotBeforeUpdate()

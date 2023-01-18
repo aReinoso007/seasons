@@ -3,22 +3,12 @@ import { createRoot } from 'react-dom/client';
 
 class App extends React.Component {
 
-    //here we intialize state, tho its not the only way
-    constructor(props) {
-        //Reference to parent class
-        super(props);
-        //intializing state to an object
-        // the only time we do direct assignment to the state
-        // we always use setState
-        this.state = { lat: null, errorMessage: '' };
-
-    }
+    state = { lat: null, errorMessage: '' };
 
     componentDidMount() {
         window.navigator.geolocation.getCurrentPosition(
             position => this.setState({ lat: position.coords.latitude }),
             err => this.setState({ errorMessage: err.message })
-
         );
     }
 

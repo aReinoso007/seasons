@@ -21,4 +21,4 @@
 - getSnapshotBeforeUpdate()
 
 ### Notes on Render Method 🎃
-The render method must not have multiple returns rather utilize helper functions to do the heavy lifting or conditional logic.
+The render method must not have multiple return statements rather utilize helper functions to do the heavy lifting or conditional logic.

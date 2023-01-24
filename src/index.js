@@ -14,15 +14,22 @@ class App extends React.Component {
         );
     }
 
-    //React needs to have render defined
-    render() {
+    renderContent() {
         if (this.state.errorMessage && !this.state.lat) {
             return <SeasonDisplay errMsg={this.state.errorMessage} />
         }
         if (!this.state.errorMessage && this.state.lat) {
             return <SeasonDisplay lat={this.state.lat} />
         }
-        return <Spinner />
+        return <Spinner message="Please allow location" />
+    }
+
+    render() {
+        return (
+            <div className="border red">
+                {this.renderContent()}
+            </div>
+        )
     }
 }
 

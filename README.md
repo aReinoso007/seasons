@@ -1,5 +1,7 @@
+## Seasons Project
+### What is this about? 🔎
+This is a simple react app that tells the weather using the user's location and some custom styling is applied depending on the season.
 ## Component lifeCycle 
-
 * Constructor: 
     for state init, init data loading (calling APIs)
 

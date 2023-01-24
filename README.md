@@ -22,3 +22,11 @@
 
 ### Notes on Render Method 🎃
 The render method must not have multiple return statements rather utilize helper functions to do the heavy lifting or conditional logic.
+
+### Default props 🎁
+If no props are passed to the component we must use
+```
+ComponentName.defaultProps = {
+    propName: 'default value'
+}
+```

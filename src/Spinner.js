@@ -7,5 +7,11 @@ const Spinner = (props) => {
         </div>
     );
 };
+/*
+in case there is no message
+*/
+Spinner.defaultProps = {
+    message: 'Loading...'
+}
 
 export default Spinner;

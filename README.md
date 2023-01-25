@@ -21,6 +21,15 @@ This is a simple react app that tells the weather using the user's location and 
 - State must be initialized when a component is created
 - State can only be updated using function ``` setState ```
 - setState is an addition operation so the state of a prop does not get override (unless a prop's state is changing)
+### Default props 🎁
+If no props are passed to the component we must use
+```
+ComponentName.defaultProps = {
+    propName: 'default value'
+}
+```
+### Notes on Render Method 🎃
+The render method must not have multiple return statements rather utilize helper functions to do the heavy lifting or conditional logic.
 ## Component lifeCycle 🔃
 * Constructor: 
     for state init, init data loading (calling APIs)
@@ -42,13 +51,4 @@ This is a simple react app that tells the weather using the user's location and 
 - getDerivedStateFromProps()
 - getSnapshotBeforeUpdate()
 
-### Notes on Render Method 🎃
-The render method must not have multiple return statements rather utilize helper functions to do the heavy lifting or conditional logic.
 
-### Default props 🎁
-If no props are passed to the component we must use
-```
-ComponentName.defaultProps = {
-    propName: 'default value'
-}
-```

@@ -28,8 +28,6 @@ ComponentName.defaultProps = {
     propName: 'default value'
 }
 ```
-### Notes on Render Method 🎃
-The render method must not have multiple return statements rather utilize helper functions to do the heavy lifting or conditional logic.
 ## Component lifeCycle 🔃
 * Constructor: 
     for state init, init data loading (calling APIs). First function that gets called
@@ -51,4 +49,5 @@ The render method must not have multiple return statements rather utilize helper
 - getDerivedStateFromProps()
 - getSnapshotBeforeUpdate()
 
-
+### Notes on Render Method 🎃
+The render method must not have multiple return statements rather utilize helper functions to do the heavy lifting or conditional logic.

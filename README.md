@@ -1,6 +1,26 @@
 ## Seasons Project
 ### What is this about? 🔎
 This is a simple react app that tells the weather using the user's location and some custom styling is applied depending on the season.
+
+## Benefits of Class based Components ✨
+- Easier code organization
+- Can use 'state' system, respond to data loading methods
+- easier to handle user input
+- Understands lifecycle methods
+
+### Rules of Class Based Components 📏
+- must be a JS class
+- must extend (subclass) ``` React.Component ```
+- must define a 'render' method that returns some JSX
+## State in React 👓
+### Rules of state 📏
+- only usable with class components
+- props and state are different
+- 'State' is a JS obj that contains data relevant to a component
+- 'Updating' state on a component causes the component to (almost) instantly rerender
+- State must be initialized when a component is created
+- State can only be updated using function ``` setState ```
+- setState is an addition operation so the state of a prop does not get override (unless a prop's state is changing)
 ## Component lifeCycle 🔃
 * Constructor: 
     for state init, init data loading (calling APIs)
